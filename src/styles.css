@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+.calculator-container {
+    height: 500px;
+    width: 300px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.result-calc-container {
+    height: 150px;
+    width: 290px;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, #C863AB 0%, #F987B7 100%);
+    border: 1px solid plum;
+    border-radius: 10px;
+}
+
+
+.func-calc-container{
+    height: 335px;
+    width: 290px;
+    margin: 5px auto;
+    /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); 
+    border: 1px solid plum;*/
+    border-radius: 10px;
+
+}
+
+.dbox{
+    border: 1px solid green;
+}
+
+.flex-fill {
+    flex:1;
+}
+
+.calc-row{
+    height: 20%;
+}
+
+
+.xyz { 
+    background-size: auto; 
+    text-align: center; 
+    padding-top: 100px; 
+} 
+
+.btn-circle.btn-md { 
+    width: 48px; 
+    height: 48px; 
+    padding: 7px 10px; 
+    border-radius: 24px;
+} 
+
+.font-calc{
+    font-size: 20px; 
+    text-align: center; 
+    font-weight: 500;
+    
+}
+
+.btn-purple {
+    background-color: #BA68C8;
+    color: white;
+}
+
+.btn-pink {
+    background-color: #FBE4EC;
+    color: black;
+}
+ 
+.btn-yellow {
+    background-color: #F4C80C;
+    color: white;
+}
+ 
