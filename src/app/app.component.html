@@ -1,61 +1,77 @@
-<div class="container calculator-container align-items-center">
+<div class="container calculator-container align-items-center shadow-lg">
   <div class="container result-calc-container">
-
+     <h3>{{wholeCalculationStr}}</h3>
+     <h1>{{finalCalculation}}</h1>
 
 
   </div>
   <div class="container func-calc-container">
     <div class="row calc-row align-items-center">
       <div class="col  ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-purple">+/-</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-purple"
+        (click)="operation('SIGN')">+/-</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-purple">%</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-purple"
+        (click)="operation('MODULUS')">%</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-purple">X</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-purple"
+        (click)="operation('MULTIPLY')">X</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-purple">/</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-purple"
+        (click)="operation('DIVISION')">/</button> 
+      </div>
+    </div>
+    <div class="row calc-row align-items-center">
+      <div class="col">
+        <button type="button" class="btn  btn-circle btn-md font-calc btn-pink"
+        (click)="operatingNumber('7')">7</button> 
+      </div>
+      <div class="col ">
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        (click)="operatingNumber('8')">8</button> 
+      </div>
+      <div class="col ">
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        (click)="operatingNumber('9')">9</button> 
+      </div>
+      <div class="col ">
+        <button type="button" class="btn btn-circle btn-md font-calc btn-purple"
+        (click)="operation('ADDITION')">+</button> 
       </div>
     </div>
     <div class="row calc-row align-items-center">
       <div class="col  ">
-        <button type="button" class="btn  btn-circle btn-md font-calc btn-pink">7</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        (click)="operatingNumber('4')">4</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">8</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        (click)="operatingNumber('5')">5</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">9</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        (click)="operatingNumber('6')">6</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-purple">+</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-purple"
+        (click)="operation('SUBTRACT')">-</button> 
       </div>
     </div>
     <div class="row calc-row align-items-center">
       <div class="col  ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">4</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        (click)="operatingNumber('1')">1</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">5</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        (click)="operatingNumber('2')">2</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">6</button> 
-      </div>
-      <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-purple">-</button> 
-      </div>
-    </div>
-    <div class="row calc-row align-items-center">
-      <div class="col  ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">1</button> 
-      </div>
-      <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">2</button> 
-      </div>
-      <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">3</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        (click)="operatingNumber('3')">3</button> 
       </div>
       <div class="col ">
         <button type="button" class="btn btn-circle btn-md font-calc"></button> 
@@ -63,16 +79,20 @@
     </div>
     <div class="row calc-row align-items-center">
       <div class="col  ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">.</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        >.</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">0</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        (click)="operatingNumber('0')">0</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-pink">C</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
+        (click)="operation('CLEAR')">C</button> 
       </div>
       <div class="col ">
-        <button type="button" class="btn btn-circle btn-md font-calc btn-yellow ">=</button> 
+        <button type="button" class="btn btn-circle btn-md font-calc btn-yellow"
+        (click)="operation('EQUALS')">=</button> 
       </div>
     </div>
 

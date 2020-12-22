@@ -3,10 +3,9 @@
 .calculator-container {
     height: 500px;
     width: 300px;
-    border: 1px solid grey;
     border-radius: 10px;
     text-align: center;
-    margin: 0 auto;
+    margin-top: 75px;
     padding: 5px;
 }
 
