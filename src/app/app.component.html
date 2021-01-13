@@ -1,9 +1,8 @@
 <div class="container calculator-container align-items-center shadow-lg">
   <div class="container result-calc-container">
-     <h3>{{wholeCalculationStr}}</h3>
-     <h1>{{finalCalculation}}</h1>
-
-
+    <input [disabled]="true" class="customtext-calstr" [(ngModel)]="wholeCalculationStr"> 
+    <input [disabled]="true" class="customtext-finalcalculation" [(ngModel)]="finalCalculation"> 
+     
   </div>
   <div class="container func-calc-container">
     <div class="row calc-row align-items-center">
@@ -80,7 +79,7 @@
     <div class="row calc-row align-items-center">
       <div class="col  ">
         <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
-        >.</button> 
+        (click)="operatingNumber('.')">.</button> 
       </div>
       <div class="col ">
         <button type="button" class="btn btn-circle btn-md font-calc btn-pink"
